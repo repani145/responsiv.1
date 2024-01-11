@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h5{display: none;}
+        @media screen and (min-width:1024px) {
+            h5{
+            display: inline;
+            /* background-color: aqua; */
+            border-radius: 5px;
+            padding: 3px;
+        }
+        nav{display: flex;
+        justify-content: space-around;
+    background-color: antiquewhite;}
+        }
+
+        @media screen and (min-width:375px
+        ) and (max-width:768px) {
+            h5{
+            display: inline;
+            background-color: aqua;
+            border-radius: 5px;
+            padding: 3px;
+        }
+        nav{display: flex;
+        justify-content: space-around;
+    background-color: antiquewhite;}
+        }
+
+        @media screen and (max-width:375px) {
+            h5{
+            display:grid;
+            /* background-color: aqua; */
+            padding: 3px;
+            border-radius: 5px;
+        }
+        nav{display: flex;
+            width: 50px;
+            flex-flow: wrap row;
+        /* justify-content: space-around; */
+        align-content: space-around;
+        justify-content: center;
+        background-color: antiquewhite;}
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h5>page1</h5>
+        <h5>page2</h5>
+        <h5>page3</h5>
+        <h5>page4</h5>
+        <h5>page5</h5>
+    </nav>
+</body>
+</html>
